@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Nikita Selin — Senior Golang Engineer. High-load, AWS/GCP, DDD."
+    />
+    <title>Nikita Selin — Senior Golang Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="scanlines" aria-hidden="true"></div>
+    <div class="shell">
+      <header class="topbar">
+        <a class="brand" href="#top">~/cv</a>
+        <nav class="nav" id="nav" aria-label="Sections"></nav>
+        <div class="lang" role="group" aria-label="Language">
+          <button type="button" data-lang="ru" class="lang-btn">RU</button>
+          <span class="lang-sep" aria-hidden="true">|</span>
+          <button type="button" data-lang="en" class="lang-btn">EN</button>
+        </div>
+      </header>
+
+      <main id="top">
+        <section class="hero" aria-labelledby="name">
+          <p class="prompt" id="prompt"></p>
+          <h1 id="name"></h1>
+          <p class="headline" id="headline"></p>
+          <p class="meta">
+            <span id="location"></span>
+            <span class="cursor" aria-hidden="true"></span>
+          </p>
+          <ul class="hero-links" id="hero-links"></ul>
+        </section>
+
+        <section id="experience" class="block">
+          <h2 class="block-title" data-section="experience"></h2>
+          <div id="experience-list"></div>
+        </section>
+
+        <section id="projects" class="block">
+          <h2 class="block-title" data-section="projects"></h2>
+          <div id="projects-list" class="projects"></div>
+        </section>
+
+        <section id="education" class="block">
+          <h2 class="block-title" data-section="education"></h2>
+          <div id="education-body" class="edu"></div>
+        </section>
+
+        <section id="skills" class="block">
+          <h2 class="block-title" data-section="skills"></h2>
+          <ul id="skills-list" class="skills"></ul>
+        </section>
+
+        <section id="contact" class="block">
+          <h2 class="block-title" data-section="contact"></h2>
+          <ul id="contact-list" class="contact"></ul>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <p id="footer-text"></p>
+      </footer>
+    </div>
+
+    <script src="content.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
